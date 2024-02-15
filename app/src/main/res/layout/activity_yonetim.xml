@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".yonetim.YonetimActivity"
+    android:background="@drawable/background">
+
+    <TextView
+        android:id="@+id/sec"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="82dp"
+        android:text="Kullanıcı Tipi Seç:"
+        android:textColor="#E33E0B"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <EditText
+        android:id="@+id/ad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="81dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="82dp"
+        android:hint="Ad"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:background="@drawable/input"
+        android:padding="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/soyad"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/telefon" />
+
+    <EditText
+        android:id="@+id/sifre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="82dp"
+        android:hint="Şifre"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:background="@drawable/input"
+        android:padding="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/telefon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ePosta" />
+
+    <EditText
+        android:id="@+id/dogumTarihi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="81dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="82dp"
+        android:hint="DogumTarihi"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:background="@drawable/input"
+        android:padding="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/soyad" />
+
+    <EditText
+        android:id="@+id/ePosta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="81dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="82dp"
+        android:hint="e-Posta"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:background="@drawable/input"
+        android:padding="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/sifre"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/kulaniciTipi" />
+
+    <EditText
+        android:id="@+id/soyad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="81dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="82dp"
+        android:hint="Soyad"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:background="@drawable/input"
+        android:padding="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/dogumTarihi"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ad" />
+
+    <Spinner
+        android:id="@+id/kulaniciTipi"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="82dp"
+        app:layout_constraintBottom_toTopOf="@+id/ePosta"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sec"
+        android:textColor="@color/white"
+        android:popupBackground="#9F9797"
+        android:dropDownSelector="@color/white">
+
+    </Spinner>
+
+    <EditText
+        android:id="@+id/telefon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="81dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="82dp"
+        android:hint="Telefon"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:background="@drawable/input"
+        android:padding="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/ad"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sifre" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="59dp"
+        android:layout_marginEnd="122dp"
+        android:layout_marginBottom="128dp"
+        android:onClick="kullaniciKaydet"
+        android:text="Kaydet"
+        android:background="@drawable/button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dogumTarihi" />
+</androidx.constraintlayout.widget.ConstraintLayout>

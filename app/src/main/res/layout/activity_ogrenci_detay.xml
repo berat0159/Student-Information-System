@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ogrenci.OgrenciDetayActivity"
+    android:background="@drawable/background">
+
+  <EditText
+      android:id="@+id/noOgr"
+      android:layout_width="125dp"
+      android:layout_height="40dp"
+      android:layout_marginStart="34dp"
+      android:layout_marginTop="10dp"
+      android:layout_marginEnd="62dp"
+      android:autoSizeTextType="uniform"
+      android:hint="OgrenciNo"
+      android:textColorHint="@color/white"
+      android:textColor="@color/white"
+      android:background="@drawable/input"
+      android:padding="10dp"
+      android:textStyle="bold"
+      app:layout_constraintBottom_toTopOf="@+id/epostaOgr"
+      app:layout_constraintEnd_toStartOf="@+id/dogumOgr"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent" />
+
+  <EditText
+      android:id="@+id/epostaOgr"
+      android:layout_width="125dp"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="34dp"
+      android:layout_marginTop="10dp"
+      android:layout_marginEnd="62dp"
+      android:autoSizeTextType="uniform"
+      android:hint="E-Posta"
+      android:textStyle="bold"
+      android:textColor="@color/white"
+      android:textColorHint="@color/white"
+      android:background="@drawable/input"
+      android:padding="10dp"
+      app:layout_constraintBottom_toTopOf="@+id/sifreOgr"
+      app:layout_constraintEnd_toStartOf="@+id/telOgr"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/noOgr" />
+
+  <EditText
+      android:id="@+id/telOgr"
+      android:layout_width="125dp"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="10dp"
+      android:layout_marginEnd="47dp"
+      android:autoSizeTextType="uniform"
+      android:hint="Telefon"
+      android:textColorHint="@color/white"
+      android:textColor="@color/white"
+      android:background="@drawable/input"
+      android:padding="10dp"
+      android:textStyle="bold"
+      app:layout_constraintBottom_toTopOf="@+id/soyadOgr"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toEndOf="@+id/epostaOgr"
+      app:layout_constraintTop_toBottomOf="@+id/dogumOgr" />
+
+  <EditText
+      android:id="@+id/sifreOgr"
+      android:layout_width="125dp"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="34dp"
+      android:layout_marginTop="10dp"
+      android:layout_marginEnd="62dp"
+      android:autoSizeTextType="uniform"
+      android:hint="Sifre"
+      android:textColorHint="@color/white"
+      android:textColor="@color/white"
+      android:background="@drawable/input"
+      android:padding="10dp"
+      android:textStyle="bold"
+      app:layout_constraintBottom_toTopOf="@+id/button5"
+      app:layout_constraintEnd_toStartOf="@+id/soyadOgr"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/epostaOgr" />
+
+  <EditText
+      android:id="@+id/soyadOgr"
+      android:layout_width="125dp"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="10dp"
+      android:layout_marginEnd="47dp"
+      android:autoSizeTextType="uniform"
+      android:hint="Soyad"
+      android:textColorHint="@color/white"
+      android:textColor="@color/white"
+      android:background="@drawable/input"
+      android:padding="10dp"
+      android:textStyle="bold"
+      app:layout_constraintBottom_toTopOf="@+id/adOgr"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toEndOf="@+id/sifreOgr"
+      app:layout_constraintTop_toBottomOf="@+id/telOgr" />
+
+  <EditText
+      android:id="@+id/adOgr"
+      android:layout_width="125dp"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="10dp"
+      android:layout_marginEnd="47dp"
+      android:autoSizeTextType="uniform"
+      android:hint="Ad"
+      android:textColorHint="@color/white"
+      android:textColor="@color/white"
+      android:background="@drawable/input"
+      android:padding="10dp"
+      android:textStyle="bold"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toEndOf="@+id/button5"
+      app:layout_constraintTop_toBottomOf="@+id/soyadOgr" />
+
+  <EditText
+      android:id="@+id/dogumOgr"
+      android:layout_width="125dp"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="10dp"
+      android:layout_marginEnd="47dp"
+      android:autoSizeTextType="uniform"
+      android:hint="DogTarihi"
+      android:textColorHint="@color/white"
+      android:textColor="@color/white"
+      android:background="@drawable/input"
+      android:padding="10dp"
+      android:textStyle="bold"
+      app:layout_constraintBottom_toTopOf="@+id/telOgr"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toEndOf="@+id/noOgr"
+      app:layout_constraintTop_toTopOf="parent" />
+
+  <Button
+      android:id="@+id/button5"
+      android:layout_width="125dp"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="34dp"
+      android:layout_marginTop="15dp"
+      android:layout_marginEnd="62dp"
+      android:onClick="guncelleOgr"
+      android:text="guncelle"
+      android:background="@drawable/button"
+      app:layout_constraintBottom_toTopOf="@+id/textView8"
+      app:layout_constraintEnd_toStartOf="@+id/adOgr"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/sifreOgr" />
+
+  <TextView
+      android:id="@+id/textView8"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="16dp"
+      android:layout_marginTop="22dp"
+      android:layout_marginEnd="217dp"
+      android:layout_marginBottom="32dp"
+      android:text="Ders Programı:"
+      android:textColor="#EF0606"
+      android:textSize="25dp"
+      app:layout_constraintBottom_toTopOf="@+id/programRecyclerView"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/button5" />
+
+  <androidx.recyclerview.widget.RecyclerView
+      android:id="@+id/programRecyclerView"
+      android:layout_width="391dp"
+      android:layout_height="370dp"
+      android:layout_marginStart="1dp"
+      android:layout_marginTop="5dp"
+      android:layout_marginEnd="1dp"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.0"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

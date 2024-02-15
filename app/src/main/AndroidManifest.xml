@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.OgrenciBilgiSistemm"
+        tools:targetApi="31">
+        <activity
+            android:name=".ogrenci.NotDevamsizlikDetayActivity"
+            android:exported="false"
+            android:label="@string/title_activity_not_devamsizlik_detay"
+            android:parentActivityName=".ogrenci.OgrenciActivity"
+            />
+        <activity
+            android:name=".ogrenci.OgrenciActivity"
+            android:exported="false"
+            android:label="@string/title_activity_ogrenci"
+            android:parentActivityName=".MainActivity"/>
+        <activity
+            android:name=".ogrenci.DevamsizlikNotEkleAcitvity"
+            android:exported="false"
+            android:parentActivityName=".ogrenci.OgrenciDetayActivity"/>
+        <activity
+            android:name=".ogrenci.OgrenciDetayActivity"
+            android:exported="false"
+            android:parentActivityName=".ogretmen.OgretmenActivity"/>
+        <activity
+            android:name=".ogretmen.OgretmenActivity"
+            android:exported="false"
+            android:parentActivityName=".MainActivity"
+            />
+
+        <activity
+            android:name=".yonetim.OgrenciViewActivity"
+            android:exported="false"
+            android:label="@string/title_activity_ogrenci_view"
+            android:parentActivityName=".yonetim.YonetimActivity"/>
+        <activity
+            android:name=".yonetim.YtDersEkleActivity"
+            android:exported="false"
+            android:parentActivityName=".yonetim.YonetimActivity"/>
+        <activity
+            android:name=".yonetim.YonetimActivity"
+            android:exported="false"
+            android:parentActivityName=".MainActivity"/>
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

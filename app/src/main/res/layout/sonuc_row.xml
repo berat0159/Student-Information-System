@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="15dp"
+    app:cardCornerRadius="15dp"
+    android:layout_margin="10dp"
+    android:backgroundTint="#C6F690">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:orientation="vertical"
+        >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="25dp"
+            >
+            <TextView
+                android:id="@+id/dersAdi"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:text="dersAdi"
+                android:autoSizeTextType="uniform"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                />
+            <TextView
+                android:layout_marginTop="5dp"
+                android:id="@+id/sinavTipi"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:text="sinavTipi"
+                android:autoSizeTextType="uniform"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                />
+            <TextView
+                android:id="@+id/sinavNotu"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:text="Sinav Notu"
+                android:autoSizeTextType="uniform"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

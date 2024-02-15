@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/background">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginStart="90dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="90dp"
+        android:src="@drawable/icon"
+        app:layout_constraintBottom_toTopOf="@+id/kullanıcıAdi"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/kullanıcıAdi"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="48dp"
+        android:hint="Kullanıcı Adı"
+        android:padding="10dp"
+        android:textColor="@color/white"
+        android:background="@drawable/input"
+        android:textColorHint="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/kullanıcıSifre"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <EditText
+        android:id="@+id/kullanıcıSifre"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:hint="Sifre"
+        android:background="@drawable/input"
+        android:inputType="textPassword"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:padding="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/button3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/kullanıcıAdi" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="80dp"
+        android:layout_marginBottom="212dp"
+        android:onClick="giris"
+        android:text="giriş"
+        android:background="@drawable/button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/kullanıcıSifre" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

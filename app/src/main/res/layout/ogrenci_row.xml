@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="20dp"
+    app:cardElevation="15dp"
+    android:layout_margin="15dp"
+    android:backgroundTint="#C7D1D6"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:orientation="vertical"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="25dp"
+            >
+            <TextView
+                android:id="@+id/ogrId"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:text="ID"
+                android:autoSizeTextType="uniform"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                />
+            <TextView
+                android:id="@+id/ogrAd"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:text="Adı"
+                android:autoSizeTextType="uniform"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                />
+            <TextView
+                android:id="@+id/ogrSoyad"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:text="Soyadı"
+                android:autoSizeTextType="uniform"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                />
+            <TextView
+                android:id="@+id/ogrTel"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:text="Tel"
+                android:autoSizeTextType="uniform"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                />
+            <TextView
+                android:id="@+id/ogrEposta"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:text="Eposta"
+                android:autoSizeTextType="uniform"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                />
+            <TextView
+                android:id="@+id/ogrDogum"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:text="Dogum"
+                android:autoSizeTextType="uniform"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+</androidx.cardview.widget.CardView>
