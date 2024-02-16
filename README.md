@@ -14,3 +14,18 @@
   </a>
 </p>
 
+<table align="center" style="margin: 0px auto; text-align:center;">
+
+<tr>
+  <td>Recycler view</td>
+  <td>View Binding</td>
+  <td>XML</td>
+  <td>SQLite</td>
+</tr>
+</table>
+
+## Screens and Functions
+* Username and password are fixed as "admin"
+
+
+
