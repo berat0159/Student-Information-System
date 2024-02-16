@@ -24,6 +24,15 @@
 </tr>
 </table>
 
+## Use Case Diagram
+
+![usecase](https://github.com/berat0159/Student-Information-System/assets/101979200/121ea502-c768-4df3-ab6d-e6583ec715fc)
+
+## UML Diagram
+
+![UML](https://github.com/berat0159/Student-Information-System/assets/101979200/c768fbc3-b713-4d33-a4ab-51ffe1f4391a)
+
+
 ## Screens and Functions
 * Username and password are fixed as "admin"
 
