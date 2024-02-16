@@ -46,5 +46,24 @@
 
 ![öğretmen](https://github.com/berat0159/Student-Information-System/assets/101979200/a69c3eb9-98fd-4c06-9196-9be3f94f290d)
 
- 
+* When the teacher accesses the relevant student detail data, he or she can update the student's personal data and the student's course schedule is listed at the bottom.
+* In addition, from the menu on the top right of this screen, the teacher can access the record screen for the grade and attendance data of the relevant student.
+
+![öğrenci](https://github.com/berat0159/Student-Information-System/assets/101979200/2b575d50-7218-4aef-a0fd-5c8fe8f9482a)
+
+* On this recording screen, the teacher gives grades for the courses given to the relevant student, calculates the general average of these courses and displays them in texbox.
+* The recorded grade data lists how many points the relevant student received from which courses.
+* In the lower part, the date is selected according to the student's course, the absence is recorded and the absence data is listed.
+* The grade and absence data listed are clickable. Thus, the interest detail data screen can be accessed.
+
+![not](https://github.com/berat0159/Student-Information-System/assets/101979200/d7c6141a-b8ea-4650-b799-c0ea81f1be51)
+
+* This screen also lists students' grades and attendance data recorded by the teacher.
+
+![bilgi](https://github.com/berat0159/Student-Information-System/assets/101979200/7ce84550-5f2a-43df-b528-8c8bc1e26d4f)
+
+* Finally, on the student screen, after the student logs in, his/her personal data, grade, attendance information and course schedule are displayed.
+
+![Image](https://github.com/berat0159/Student-Information-System/assets/101979200/8b8beab6-20cf-43de-9409-ef4fdee4698b)
+
 
