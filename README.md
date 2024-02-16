@@ -27,5 +27,24 @@
 ## Screens and Functions
 * Username and password are fixed as "admin"
 
+![login](https://github.com/berat0159/Student-Information-System/assets/101979200/4a342242-82e7-4d56-bd02-b036d7c424a6)
 
+* On this screen, the administrator registers the user by determining the user type.
+
+![yönetim](https://github.com/berat0159/Student-Information-System/assets/101979200/d49d00d1-dbfd-41a4-b117-fa47522dc708)
+
+* On the add course screen, the administrator creates the course schedule according to the teacher and student.
+
+![dersekle](https://github.com/berat0159/Student-Information-System/assets/101979200/d2516293-8e26-4b8d-9cc9-f6defc863928)
+
+* On this screen, detailed information of the users added by the administrator is listed using recyclerview technology.
+
+![kullanıcıdetay](https://github.com/berat0159/Student-Information-System/assets/101979200/8dfd32b3-d95b-45f8-badc-5e3fc7e44add)
+
+* On this screen, the teacher can update his/her own data recorded by the administrator.
+* In the lower part, the students to whom the teacher will teach depending on the course schedule are listed. Additionally, when you click on an item from the list, student data belonging to the relevant teacher is accessed.
+
+![öğretmen](https://github.com/berat0159/Student-Information-System/assets/101979200/a69c3eb9-98fd-4c06-9196-9be3f94f290d)
+
+ 
 
